@@ -12,8 +12,8 @@ var someSubjects = schoolSubjects.filter {$0.count < 4}
 print(someSubjects)
 //:  Using the code below, use the `reduce` function to subtract all of the values within the array from the starting value 100. Print the resulting value.
 let damageTaken = [25, 10, 15, 30, 20]
-var overallDamage = 100 - damageTaken.reduce(0) {$0+$1}
-print(overallDamage)
+var overallHealth = 100 - damageTaken.reduce(100, -)
+print(overallHealth)
 /*:
  _Copyright © 2023 Apple Inc._
 
